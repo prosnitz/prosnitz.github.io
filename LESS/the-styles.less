@@ -8,9 +8,20 @@ body {
 
 
 section {
-	margin: 5em auto 0 auto;
+	margin: 2em auto 0 auto;
 	text-align: center;
 	width: calc(~"100% - 4em");
+
+	a {
+		color: black;
+		display: inline-block;
+		padding: 1em;
+		text-decoration: none;
+
+		&:hover {
+			.background-image(radial-gradient(ellipse at center, lighten(orange, 35%) 0%,@orange 70%));
+		}
+	}
 
 	h1 {
 		font-family: @baseFont;
