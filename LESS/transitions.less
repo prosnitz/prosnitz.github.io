@@ -1,0 +1,130 @@
+.rotate {
+	font-family: sans-serif;
+	list-style: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+	overflow: visible;
+
+	li {
+		display: inline-block;
+		overflow: visible;
+
+		a {
+			box-shadow: 0 0 .375em rgba(0,0,0, .4);
+			.background-image(linear-gradient(to bottom, lighten(@orange, 30%) 0%, darken(@orange, 5%) 100%));
+			border: 1px solid #444;
+			display: inline-block;
+			padding: 1em 1em;
+			.transition(all 0.15s ease);
+
+			&:after {
+				content: "\276F";
+				display: inline-block;
+				margin-left: 1em;
+				.transition(all 0.2s ease);
+			}
+
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				.transform(rotate(-20deg));
+				z-index: 1000;
+			}
+
+			&:hover:after,
+			&:focus:after {
+				.transform(rotate(90deg));
+			}
+		}
+	}
+}
+
+.three-d {
+	font-family: sans-serif;
+	list-style: none;
+	margin: 0 0 2em 0;
+	padding: 0;
+	overflow: visible;
+	
+	
+	li {
+		display: inline-block;
+		overflow: visible;
+		.perspective(200px);
+		.perspective-origin(center);
+		
+		a {
+			.background-image(linear-gradient(to bottom, lighten(@orange, 30%) 0%, darken(@orange, 5%) 100%));
+			box-shadow: 0 0 .375em rgba(0,0,0, .4);
+			border: 1px solid #444;
+			display: inline-block;
+			padding: 1em;
+			.transition(all 0.1s ease-in-out);
+			.transform-style(preserve-3d);
+			
+
+			&:after {
+				content: "\276F";
+				display: inline-block;
+				margin-left: 1em;
+				.transition(all 0.25s ease-in-out);
+
+			}
+
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				.rotateY(45deg);
+				z-index: 1;
+			}
+
+			&:hover:after,
+			&:focus:after {
+				.transform(rotate(90deg));
+			}
+		}
+	}	
+}
+
+.keyframes {
+	font-family: sans-serif;
+	list-style: none;
+	padding: 0;
+	overflow: visible;
+
+	li {
+		display: inline-block;
+		overflow: visible;
+
+
+		a {
+			box-shadow: 0 0 .375em rgba(0,0,0, .4);
+			.background-image(linear-gradient(to bottom, lighten(@orange, 30%) 0%, darken(@orange, 5%) 100%));
+			border: 1px solid #444;
+			display: inline-block;
+			padding: 1em 1em;
+			.transition(all 0.15s ease);
+
+			&:after {
+				content: "\276F";
+				display: inline-block;
+				margin-left: 1em;
+				.transition(all 0.25s ease);
+			}
+
+			&:hover,
+			&:focus {
+				cursor: pointer;
+				.animation(moveit .375s ease-in-out both);
+				.keyframes(~'moveit, 0%{ transform: scale(1); } 100%{ transform: scale(1.75) rotate(10deg); border-radius: 50%; }');
+			}
+
+			&:hover:after,
+			&:focus:after {
+				.transform(rotate(90deg));
+			}
+		}
+	}
+}
+
+	
