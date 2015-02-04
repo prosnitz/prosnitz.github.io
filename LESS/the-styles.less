@@ -1,0 +1,131 @@
+* {
+	.box-sizing(border-box);
+	.transition(all .2s ease);
+}
+
+body {
+	// background: @orange;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 75em;
+	width: calc(~'100% - 2em');
+}
+
+
+header {
+	background: @orange;
+	box-shadow: 0 .25em .5em rgba(0,0,0, .25);
+	.clear;
+	display: block;
+	margin: 0 auto;
+	padding: 1em;
+	
+	
+	h1 {
+		.clear;
+		font-family: @cooper;
+		font-size: 3em;
+		margin: 1.625em auto 0 auto;
+		padding-right: .625em;
+		position: relative;
+		text-align: right;
+
+		&:before {
+			background: url(../images/bird.png) 0 0 no-repeat;
+			background-size: 100%;
+			content: " ";
+			display: block;
+			height: 2.5em;
+			margin-left: calc(~'100% - 3em');
+			position: absolute;
+			right: -.125em;
+			top: -1.85em;
+			width: 2em;
+		}
+	}
+
+	h2 {
+		font-family: @news;
+		font-size: 1.25em;
+		font-weight: normal;
+		margin: 0 auto;
+		padding-right: 1.625em;
+
+		@media all and (min-width: 20.0625em) {
+			text-align: right;
+		}
+
+		a {
+			color: #000;
+			font-family: @cooper;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 37.5em) {
+	header {
+		box-shadow: -.125em .125em .75em rgba(0,0,0, .375);
+		// float: right;
+		margin: 0 0 0 calc(~'100% - 30em'); 
+		width: 30em;
+	}
+}
+
+[role="main"] {
+	.clear;
+	display: block;
+	margin-top: 1em;
+
+	section {
+		background: white;
+		box-shadow: 0 .25em .5em rgba(0,0,0, .25);
+		.clear;
+		margin: 0 auto 1em auto;
+		width: 100%;
+
+		h1 {
+			font-family: @news;
+			font-size: 1.25em;
+			font-weight: 400;
+			padding: .5em .5em 0 .5em;
+		}
+
+		video {
+			padding-bottom: 0;
+			width: 100%;
+		}
+
+		@media all and (min-width: 56.25em) {
+			h1 {
+				float: left;
+				margin: 0 1rem 0 0;
+				width: 25%;
+			}
+
+			video {
+				display: block;
+				float: left; 
+				width: calc(~'75% - 1rem');
+			}
+		}
+	}
+}
+
+
+
+
+.twits {
+	width: calc(~'100% - 2em');
+
+	#twitter-widget-0 {
+		box-shadow: .2em .2em .4em rgba(0,0,0, .4);
+		height: calc(~'100vh - 4em');
+	}
+}
