@@ -92,9 +92,19 @@ header {
 
 		h1 {
 			font-family: @news;
-			font-size: 1.25em;
+			font-size: 1.5em;
 			font-weight: 400;
 			padding: .5em .5em 0 .5em;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0 0 1em 0;
+			padding: 0 .75em;
+
+			li {
+				margin-bottom: .25em;
+			}
 		}
 
 		video {
@@ -105,13 +115,19 @@ header {
 		@media all and (min-width: 56.25em) {
 			h1 {
 				float: left;
+				margin: 0 1rem 1rem 0;
+				width: 25%;
+			}
+
+			ul {
+				float: left;
 				margin: 0 1rem 0 0;
 				width: 25%;
 			}
 
 			video {
 				display: block;
-				float: left; 
+				float: right; 
 				width: calc(~'75% - 1rem');
 			}
 		}
