@@ -4,17 +4,23 @@
 <meta charset="UTF-8">
 <title>Prosnitz</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
+
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script src="//use.typekit.net/nxo2evw.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 
-<link href="css/nitz.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/nitz.css" rel="stylesheet" type="text/css"> -->
+<style>
+ body {
+  background: orange;
+ }
+ </style>
 </head>
 
 <body>
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <header role="banner">
-     <!-- partial loaded here -->
+     partial loaded here
     </header>
 
     <main role="main">
@@ -33,9 +39,9 @@
     </main>
 
     <footer role="content-info">
-      <!-- partial loaded here -->
+      partial loaded here
     </footer>
-  </div>
+  </div> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
@@ -48,6 +54,22 @@
   ga('send', 'pageview');
 
 </script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
+<script type='text/javascript' src='js/bug-min.js'></script>
+    <script type='text/javascript'>
+        // default fruit fly bug:
+        new BugController({
+          'minBugs':20, 
+          'maxBugs':70, 
+          'mouseOver':'random'
+        });
+
+        // default spiders:
+        new SpiderController({
+          'minBugs':30, 
+          'maxBugs':70, 
+          'mouseOver':'random'
+        });
+    </script>
 </body>
 </html>
