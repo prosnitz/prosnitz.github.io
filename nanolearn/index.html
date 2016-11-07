@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NanoLearn</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="NanoLearn">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/nanolearn.css">
+		<script src="js/vendor/modernizr.js"></script>
+		
+	</head>
+	
+	<body class="home">
+		<div class="page-wrapper">
+			<header role="banner">
+				<h1>Nano<span>Learn</span></h1>
+			</header>
+			<nav role="navigation" class="main-nav">
+				<ul>
+					<li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+ Create Content</a></li>
+					<li><a href="#"><i class="fa fa-object-group" aria-hidden="true"></i>
+ New Nano Objects</a></li>
+					<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Score Interactions</a></li>
+					<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> Manage Users</a></li>
+					<li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Reports</a></li>
+					<li><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Create/ Manage Categories</a></li>
+				</ul>
+			</nav>
+			<main role="main">
+				<section class="search">
+					<div class="field-group">
+						<input type="search" name="search" />
+						<label for="search">Search</label>
+					</div>
+
+					<div class="select-button custom-select">
+				    <select name="categories">
+			        <option disabled selected="selected">Categories</option>
+			        <!-- <option disabled>–––––––––––––––</option> -->
+	            <optgroup label="&#128194; Category 1">
+	            	<option>&#128196; Category 1 sub 1</option>
+		            <option>&#128196; Category 1 sub 2</option>
+		            <option>&#128196; Category 1 sub 3</option>
+		            <option>&#128196; Category 1 sub 4</option>
+	            </optgroup>
+	            <optgroup label="&#128194; Category 2">
+	            	<option>&#128196; Category 2 sub 1</option>
+		            <option>&#128196; Category 2 sub 2</option>
+		            <option>&#128196; Category 2 sub 3</option>
+		            <option>&#128196; Category 2 sub 4</option>
+	            </optgroup>
+				    </select>
+					</div>
+
+					<a class="addNew">
+						<i class="fa fa-3x fa-plus-circle" aria-hidden="true"></i>
+						<span>Add New</span>
+					</a>
+				</section>
+
+				<section class="content-list">
+					<table>
+						<thead>
+							<tr>
+								<th class="type"></th>
+								<th class="title">Title</th>
+								<th class="approval">Approved</th>
+								<th class="actions">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="common">
+								<td data-title="Type">
+									<i class="fa fa-lg fa-file-video-o" aria-hidden="true"></i>
+								</td>
+								<td data-title="Title">First TV Broadcast</td>
+								<td data-title="Approved">
+									<i class="fa fa-lg fa-thumbs-up approved" aria-hidden="true"></i>
+								</td>
+								<td data-title="Actions">
+									<i class="fa fa-lg fa-pencil" aria-hidden="true"></i>
+									<i class="fa fa-lg fa-trash" aria-hidden="true"></i>
+									<i class="fa fa-lg fa-eye" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr class="expand">
+								<td colspan="4">
+									<section class="details">
+										<h1>Details</h1>
+										<button class="button">Hide</button>
+
+										<div class="data">
+											<dl class="left">
+												<dt>Enrollments:</dt>
+												<dd>124</dd>
+												<dt>Completed:</dt>
+												<dd>88</dd>
+												<dt>Incomplete:</dt>
+												<dd>88</dd>
+											</dl>
+											<dl class="right">
+												<dt>Created by:</dt>
+												<dd>Doe, Jane<br />
+														March 12, 2016
+												</dd>
+												<dt>Nano Points:</dt>
+												<dd>20</dd>
+											</dl>
+											<dl class="full">
+												<dt>Content:</dt>
+												<dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</dd>
+												<dt>Description:</dt>
+												<dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</dd>
+											</dl>
+										</div>
+									</section>
+								</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr class="common">
+								<td data-title="Type">
+									<i class="fa fa-lg fa-video-camera" aria-hidden="true"></i>
+								</td>
+								<td data-title="Title">Adaptive Social Media in the Sciences</td>
+								<td data-title="Approved">
+									<i class="fa fa-lg fa-thumbs-down unapproved" aria-hidden="true"></i>
+								</td>
+								<td data-title="Actions">
+									<i class="fa fa-lg fa-pencil" aria-hidden="true"></i>
+									<i class="fa fa-lg fa-trash" aria-hidden="true"></i>
+									<i class="fa fa-lg fa-eye" aria-hidden="true"></i>
+								</td>
+							</tr>
+							<tr class="expand">
+								<td colspan="4">
+									<section class="details">
+										<h1>Details</h1>
+										<button class="button">Hide</button>
+
+										<div class="data">
+											<dl class="left">
+												<dt>Enrollments:</dt>
+												<dd>124</dd>
+												<dt>Completed:</dt>
+												<dd>88</dd>
+												<dt>Incomplete:</dt>
+												<dd>88</dd>
+											</dl>
+											<dl class="right">
+												<dt>Created by:</dt>
+												<dd>Doe, Jane<br />
+														March 12, 2016
+												</dd>
+												<dt>Nano Points:</dt>
+												<dd>20</dd>
+											</dl>
+											<dl class="full">
+												<dt>Content:</dt>
+												<dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</dd>
+												<dt>Description:</dt>
+												<dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</dd>
+											</dl>
+										</div>
+									</section>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</main>
+			<footer role="contentinfo">
+				<p>&copy; 2016 NanoLearn</p>
+			</footer>
+		</div>
+	</body>
+	
+	<script src="js/vendor/jquery-3.1.1.min.js"></script>
+	<script src="js/vendor/jquery.slicknav.min.js"></script>
+	<script src="js/ui-scripts.js"></script>
+</html>
