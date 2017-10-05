@@ -25,3 +25,21 @@ body {
 [role="banner"] p a:hover {
 	color: white;
 }
+
+.page-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-wrapper .tile {
+	background: lightpink;
+	margin: 1em;
+	flex-grow: 1;
+}
+
+.page-wrapper a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
