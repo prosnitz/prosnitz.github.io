@@ -42,11 +42,23 @@
 			<a href="https://www.symbaloo.com/mix/lincolncentrallibrary" target="_blank"><img src="images/symbaloo-logo.png" alt="Spelling City" /></a>
 		</section>
 	</div>
-
+	
+	<script type="text/javascript" src="js/bug-min.js"></script>
 	<script>
-		// $(document).ready(function() {
-  		
-		// });
+		new BugController({
+			'minBugs':5, 
+			'maxBugs':10, 
+			'mouseOver':'die',
+			'imageSprite': 'images/fly-sprite.png',
+			'zoom': 5
+		});
+		new SpiderController({
+			'minBugs':2, 
+			'maxBugs':10, 
+			'mouseOver':'die',
+			'imageSprite': 'images/spider-sprite.png',
+			'zoom': 5
+		});
 	</script>
 </body>
 </html>
