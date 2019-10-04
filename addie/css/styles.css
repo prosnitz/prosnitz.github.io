@@ -10,24 +10,25 @@ body * {
 }
 
 [role="banner"] {
-	background: #f4e6bd;
+	/* background: #f4e6bd; */
+	background: orange;
 	padding: 0;
 	// margin-bottom: 1em;
 }
 
 [role="banner"] p {
-	color: sienna;
+	color: brown;
 	margin: 0;
 	padding: .5em;
 }
 
 [role="banner"] p a {
-	color: orangeRed;
+	color: brown;
 	transition: all .1s ease;
 }
 
 [role="banner"] p a:hover {
-	color: PaleVioletRed;
+	color: #000;
 }
 
 .page-wrapper {
@@ -41,9 +42,11 @@ body * {
 }
 
 .message {
-	background: url('../images/summer.png') 0 0 no-repeat;
+	background: url('../images/pumpkin.gif') 100% 0 no-repeat;
+	background-size: auto 100% ;
+	background-color: #000;
 	/*background-position: middle bottom;*/
-	color: sienna;
+	color: orangered;
 	text-align: center;
 	font-family: 'Oleo Script', cursive;
 	font-size: 2.5rem;
@@ -86,7 +89,8 @@ body * {
 }
 
 .tile a {
-	background: #f4e6bd;
+	/* background: #f4e6bd; */
+	background: orange;
 	/*border-radius: .5em;*/
 	display: flex;
 	padding: 2em 1em;
