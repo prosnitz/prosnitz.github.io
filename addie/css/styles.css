@@ -3,6 +3,12 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
+	background-color: rgb(243, 242, 239);
+	background-image: url('../images/spring-mixer-banner.png');
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom; 
+
 }
 
 body * {
@@ -11,24 +17,24 @@ body * {
 
 [role="banner"] {
 	/* background: #f4e6bd; */
-	background: orange;
+	background: rgb(27,24,98);
 	padding: 0;
-	// margin-bottom: 1em;
+	/* // margin-bottom: 1em; */
 }
 
 [role="banner"] p {
-	color: brown;
+	color: #fff;
 	margin: 0;
 	padding: .5em;
 }
 
 [role="banner"] p a {
-	color: brown;
+	color: #fff;
 	transition: all .1s ease;
 }
 
 [role="banner"] p a:hover {
-	color: #000;
+	color: #ccc;
 }
 
 .page-wrapper {
@@ -46,7 +52,7 @@ body * {
 	background-size: auto 100% ;
 	background-color: #000;
 	/*background-position: middle bottom;*/
-	color: orangered;
+	color: rgb(252,13,27);
 	text-align: center;
 	font-family: 'Sedgwick Ave Display', cursive;
 	font-size: 3.5rem;
@@ -92,7 +98,7 @@ body * {
 
 .tile a {
 	/* background: #f4e6bd; */
-	background: orange;
+	background: rgb(27,24,98);
 	/*border-radius: .5em;*/
 	display: flex;
 	padding: 2em 1em;
@@ -103,7 +109,7 @@ body * {
 }
 
 .tile a:hover {
-	background: #ffeeba;
+	background: rgb(252,13,27);
 	/*box-shadow: inset 0 0 60px rgba(0, 0, 0, .2);*/
 }
 
@@ -113,6 +119,8 @@ body * {
 	max-width: 100%;
 	margin: auto;
 }
+
+
 
 .pbs a img {
 	width: 70%;
