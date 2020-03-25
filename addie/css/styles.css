@@ -100,12 +100,16 @@ body * {
 	/* background: #f4e6bd; */
 	background: rgb(27,24,98);
 	/*border-radius: .5em;*/
+	color: #fff;
+	font-size: 1.25em;
 	display: flex;
 	padding: 2em 1em;
 	height: 100%;
 	width: 100%;
 	text-align: center;
 	transition: all .15s ease;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0, .7);
 }
 
 .tile a:hover {
